@@ -1,0 +1,925 @@
+.case-studies-banner {
+  .inner__banner {
+    position: relative;
+    height: 61.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media #{$ipadpro} {
+      height: 40em;
+    }
+
+    @media #{$ipad} {
+      height: 100%;
+      min-height: 54em;
+
+      .custom-row {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .bg__image {
+      position: absolute;
+      inset: 0;
+    }
+
+    .filler__img {
+      height: 51.125em;
+      max-width: 50.875em;
+      margin-left: auto;
+
+      @media #{$ipadpro} {
+        height: 26em;
+        max-width: 30em;
+      }
+
+      @media #{$ipad} {
+        height: 100%;
+        max-width: 25em;
+        margin: auto;
+        margin-bottom: 2em;
+      }
+
+      @media #{$mobL} {
+        max-width: 15em;
+      }
+    }
+
+    .primary-btn {
+      margin-top: 3.5em;
+    }
+  }
+}
+
+.case-studies-digital-experience {
+  position: relative;
+
+  .glow-image {
+    position: absolute;
+    right: 0;
+    top: -12em;
+    z-index: -1;
+
+    img {
+      height: 40em;
+      width: 70em;
+    }
+  }
+
+  .table__wrapper {
+    border: 1px solid $whitecol;
+    border-radius: 1.25em;
+    display: flex;
+    flex-direction: column;
+
+    @media #{$mobL} {
+      flex-direction: column-reverse;
+    }
+
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media #{$mobL} {
+        flex-wrap: wrap;
+      }
+
+      .col__1 {
+        // padding: 3.5em 13.5625em 4.375em 3.75em;
+        padding: 3em 3.75em;
+
+        @media #{$ipad} {
+          padding: 2em;
+          max-width: 35em;
+        }
+
+        @media #{$mobL} {
+          max-width: 100%;
+          padding: 1em;
+        }
+      }
+
+      .col__2 {
+        // padding: 2.75em 7.0625em 3.625em;
+        padding: 2.75em 3.75em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.4375em 3.5em;
+        border-left: 1px solid $whitecol;
+        flex-shrink: 0;
+
+        @media #{$ipad} {
+          padding: 2em;
+          gap: 1.25em;
+        }
+
+        @media #{$mobL} {
+          width: 100%;
+          padding: 1em;
+          gap: 1.5em;
+          border-left: none;
+          border-top: 1px solid $whitecol;
+        }
+
+        .info__box {
+          display: flex;
+          flex-direction: column;
+          gap: 0.3em;
+
+          p {
+            color: rgba(#fff, 0.7);
+          }
+        }
+      }
+    }
+
+    .body {
+      padding: 5.625em 9.875em 5.125em;
+      border-top: 1px solid $whitecol;
+
+      @media #{$ipad} {
+        padding: 2em;
+      }
+
+      @media #{$mobL} {
+        padding: 1em;
+        border-top: none;
+      }
+
+      .img__wrapper {
+        width: 100%;
+        height: 46.875em;
+        position: relative;
+        border-radius: 1.25em;
+        overflow: hidden;
+
+        @media #{$ipad} {
+          height: 20em;
+        }
+
+        @media #{$mobL} {
+          height: 10em;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-color: rgba(#000, 0.2);
+        }
+
+        .play__btn {
+          background-color: $whitecol;
+          width: 4.75em;
+          aspect-ratio: 1;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          outline: none;
+          border: none;
+          cursor: pointer;
+          opacity: 0;
+          visibility: hidden;
+
+          @media #{$ipad} {
+            width: 3em;
+
+            img {
+              width: 1.5em;
+            }
+          }
+        }
+
+        &.is__video {
+          .play__btn {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          iframe {
+            width: 100vw;
+            height: 100%;
+            min-height: 91vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.case-studies-about-project {
+  position: relative;
+
+  .glow {
+    position: absolute;
+    left: 58em;
+    top: 0;
+    z-index: -1;
+    background: var(
+      --Gradian-1,
+      linear-gradient(90deg, #dd0dce 0%, #540dce 100%)
+    );
+    filter: blur(110.00000762939453px);
+    opacity: 0.4;
+    width: 25em;
+    height: 18em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: radial-gradient(50% 50% at 50% 50%, #fff 0, #3300d9 100%);
+      filter: blur(110.0000076294px);
+      width: 9.6875em;
+      height: 18.875em;
+      top: -4em;
+      right: 10em;
+    }
+  }
+
+  .cards__grid {
+    margin-top: 3.25em;
+    position: relative;
+
+    @media #{$ipad} {
+      margin-top: 1.5em;
+
+      .custom-row {
+        gap: 1.25em;
+      }
+    }
+
+    .lines-pattern {
+      position: absolute;
+      width: 100%;
+      height: 52em;
+      top: -12em;
+      left: 0;
+      z-index: -1;
+    }
+
+    .card {
+      border-radius: 1.25em;
+      overflow: hidden;
+      height: 100%;
+      max-height: 43.1875em;
+
+      @media #{$ipadpro} {
+        max-height: 30em;
+      }
+
+      @media #{$mobL} {
+        min-height: 20em;
+        max-height: 100%;
+      }
+
+      &.lg__card {
+        max-height: 61.25em;
+
+        @media #{$ipadpro} {
+          max-height: 40em;
+        }
+
+        @media #{$ipad} {
+          max-height: 30em;
+        }
+
+        @media #{$mobL} {
+          min-height: 20em;
+          max-height: 100%;
+        }
+      }
+
+      &.space__top {
+        margin-top: 1.875em;
+
+        @media #{$ipad} {
+          margin-top: 0;
+        }
+      }
+
+      &.content__card {
+        background-color: #151515;
+        padding: 3.375em 2.0625em 2.5625em 3.125em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1em;
+
+        .logo {
+          width: 20.25em;
+          height: 10em;
+          margin-left: auto;
+
+          @media #{$ipadpro} {
+            width: 16em;
+            height: 100%;
+          }
+
+          @media #{$mobL} {
+            width: 10em;
+          }
+        }
+
+        @media #{$ipadpro} {
+          padding: 2em;
+        }
+
+        @media #{$mobL} {
+          padding: 1.5em 1em;
+        }
+      }
+    }
+  }
+}
+
+.case-studies-challenges {
+  .table__wrapper {
+    border: 1px solid $whitecol;
+    border-radius: 1.25em;
+    margin-top: 3.125em;
+
+    @media #{$ipad} {
+      margin-top: 1.5em;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1em;
+      padding: 1.8125em 6.25em 1.8125em 4.375em;
+      border-bottom: 1px solid $whitecol;
+
+      @media #{$ipadpro} {
+        padding: 1.5em 1em;
+      }
+
+      @media #{$mobL} {
+        flex-wrap: wrap;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .col1 {
+        width: 100%;
+        max-width: 37.75em;
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5625em;
+
+        @media #{$ipadpro} {
+          gap: 0.3em;
+        }
+
+        img {
+          width: 2em;
+          aspect-ratio: 1;
+
+          @media #{$ipad} {
+            width: 1.5em;
+          }
+        }
+      }
+
+      .col2 {
+        width: 100%;
+        max-width: 45.25em;
+
+        p {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.case-studies-innerpages {
+  .innerpage__wrapper {
+    height: 100%;
+    max-height: 63.6875em;
+
+    @media #{$mobL} {
+      max-height: 100%;
+    }
+  }
+
+  @media #{$mobL} {
+    .custom-row {
+      gap: 1.25em;
+    }
+  }
+}
+
+.case-studies-solutions {
+  position: relative;
+
+  .lines__pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    top: -20em;
+  }
+
+  .grid {
+    display: flex;
+    gap: 7.5em;
+    align-items: center;
+
+    @media #{$ipadpro} {
+      gap: 1.5em;
+    }
+
+    @media #{$ipad} {
+      flex-wrap: wrap;
+    }
+
+    .col1 {
+      max-width: 41.25em;
+
+      @media #{$ipadpro} {
+        max-width: 30em;
+      }
+
+      @media #{$ipad} {
+        max-width: 100%;
+      }
+    }
+
+    .col2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25em;
+
+      @media #{$ipad} {
+        width: 100%;
+      }
+
+      @media #{$mobL} {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        border: 1px solid $whitecol;
+        border-radius: 1.25em;
+        padding: 1.9375em 3.625em 2.3125em 2.125em;
+        position: relative;
+        overflow: hidden;
+
+        @media #{$ipadpro} {
+          padding: 1.5em;
+        }
+
+        @media #{$mobL} {
+          padding: 1.5em 1em;
+        }
+
+        .check {
+          width: 1.5em;
+          aspect-ratio: 1;
+          margin-bottom: 3.375em;
+
+          @media #{$ipad} {
+            margin-bottom: 2em;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          background: linear-gradient(0deg, #e064e0 0, #e064e0 100%);
+          filter: blur(110.0000076294px);
+          top: -1em;
+          right: -6em;
+          width: 100%;
+          height: 4.625em;
+          z-index: -1;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .solutions__images {
+    margin-top: 6.25em;
+
+    @media #{$ipadpro} {
+      margin-top: 3em;
+    }
+
+    @media #{$mobL} {
+      margin-top: 2em;
+    }
+
+    .image__wrapper {
+      height: 51.625em;
+      border-radius: 1.25em;
+      overflow: hidden;
+
+      @media #{$ipadpro} {
+        height: 30em;
+      }
+
+      @media #{$ipad} {
+        height: 25em;
+      }
+
+      @media #{$mobL} {
+        height: 20em;
+        margin-bottom: 1.25em;
+      }
+    }
+  }
+}
+
+.case-studies-results {
+  .results__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3.125em;
+
+    @media #{$ipad} {
+      gap: 3em 1em;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media #{$mobL} {
+      grid-template-columns: 1fr;
+      gap: 2em;
+    }
+
+    .result__box {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      position: relative;
+      text-align: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: url("../images/case-studies-detail/line.png");
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+
+      @media #{$ipad} {
+        &:nth-child(2) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      @media #{$mobL} {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.case-studies-testimonials {
+  position: relative;
+
+  .circle {
+    position: absolute;
+    top: -11em;
+    width: 100%;
+    z-index: -1;
+
+    @media #{$ipadpro} {
+      top: -7em;
+    }
+
+    @media #{$ipad} {
+      top: -4em;
+    }
+
+    @media #{$mobL} {
+      top: -1em;
+    }
+  }
+
+  .testimonials__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6em;
+
+    .star__list {
+      margin-top: 3.75em;
+      display: flex;
+      gap: 0.3125em;
+
+      @media #{$ipadpro} {
+        margin-top: 2em;
+      }
+
+      .star__item {
+        svg {
+          path {
+            fill: #fbbc04;
+          }
+        }
+      }
+    }
+
+    .content {
+      max-width: 77.6875em;
+      text-align: center;
+      margin-top: 1.25em;
+
+      .client__info {
+        margin-top: 6.25em;
+
+        @media #{$mobL} {
+          margin-top: 3em;
+        }
+
+        h5 {
+          color: rgba(#fff, 0.7);
+        }
+      }
+    }
+  }
+}
+
+.case-studies-project-images {
+  .image__wrapper {
+    height: 53.5em;
+    overflow: hidden;
+    border-radius: 1.25em;
+
+    @media #{$ipadpro} {
+      height: 30em;
+    }
+
+    @media #{$mobL} {
+      height: 15em;
+      margin-bottom: 1.25em;
+    }
+  }
+}
+
+.case-studies-next {
+  .title {
+    font-size: 12.5em;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media #{$ipadpro} {
+      font-size: 6em;
+    }
+
+    @media #{$mobL} {
+      font-size: 4em;
+    }
+  }
+
+  .image__wrapper {
+    height: 40.375em;
+    overflow: hidden;
+    border-radius: 1.25em;
+    max-width: 66.875em;
+    margin: auto;
+    margin-top: 3.4375em;
+
+    @media #{$ipadpro} {
+      height: 30em;
+      margin-top: 1.5em;
+    }
+
+    @media #{$mobL} {
+      height: 15em;
+    }
+  }
+}
+
+.case-studies-imageboxes {
+  position: relative;
+  .card {
+    overflow: hidden;
+    height: 100%;
+    max-height: 43.1875em;
+
+    @media #{$ipadpro} {
+      max-height: 30em;
+    }
+
+    @media #{$mobL} {
+      min-height: 20em;
+      max-height: 100%;
+    }
+  }
+  .image-one {
+    @media #{$mobL} {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.case-studies-design-brief {
+  position: relative;
+
+  .genericHead__title {
+    @media #{$mobL} {
+      line-height: normal;
+    }
+  }
+
+  .img-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 52.51%;
+    overflow: hidden;
+
+    @media #{$desktop} {
+      margin-top: 5em;
+    }
+    //   @media #{$mobL} {
+    //     padding-top: 90%;
+    //     margin-bottom: 1.5em;
+    //   }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+}
+
+.case-studies-concept-development {
+  position: relative;
+
+  .genericHead__title {
+    @media #{$mobL} {
+      line-height: normal;
+    }
+  }
+
+  .right-image {
+    &.img-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 77%;
+      overflow: hidden;
+
+      //   @media #{$mobL} {
+      //     padding-top: 90%;
+      //     margin-bottom: 1.5em;
+      //   }
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .branding-box-banner {
+    .img-wrapper {
+      margin-top: 5em;
+      position: relative;
+      width: 100%;
+      padding-top: 52.51%;
+      overflow: hidden;
+
+      //   @media #{$mobL} {
+      //     padding-top: 90%;
+      //     margin-bottom: 1.5em;
+      //   }
+
+      @media #{$mobL} {
+        margin-top: 4em;
+      }
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.case-studies-typography-colors {
+  .leftCol {
+    padding-right: 7.1875em;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: url("/assets/svg/line-separator.svg");
+      position: absolute;
+      right: -1px;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      @media #{$ipadpro} {
+        display: none;
+      }
+    }
+
+    .colors__grid {
+      margin-top: 5.4375em;
+      display: flex;
+      padding-left: 6.625em;
+
+      @media #{$ipadpro} {
+        padding-left: 2em;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+      }
+
+      .color__box {
+        width: 15.625em;
+        height: 15.625em;
+        padding-left: 2.5em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: -6.625em;
+
+        @media #{$ipadpro} {
+          width: 8em;
+          height: 8em;
+          margin-left: -2em;
+          padding-left: 1em;
+          font-size: 1em;
+        }
+      }
+    }
+
+    @media #{$ipadpro} {
+      padding-right: 0;
+    }
+  }
+
+  .rightCol {
+    padding-left: 7.1875em;
+
+    .genericHead__title {
+      @media #{$desktop} {
+        font-size: 6.25em;
+      }
+    }
+
+    .font-family-name {
+      margin-bottom: 0.75em;
+    }
+
+    .alphabets {
+      @media #{$desktop} {
+        font-size: 1.5em;
+      }
+    }
+
+    @media #{$ipadpro} {
+      padding-left: 0;
+    }
+  }
+}

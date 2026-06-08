@@ -1,0 +1,74 @@
+.missionVision {
+  position: relative;
+  background: radial-gradient(16.52% 16% at 50% 5.83%, #2f2f35 0, #141418 100%);
+  @media #{$mobL} {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(
+      16.52% 16% at 50% 5.83%,
+      #2f2f35 0%,
+      #141418 100%
+    );
+    width: 120em;
+    height: 55.6875em;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 88.707875em;
+    opacity: 0.2;
+    background: linear-gradient(90deg, #dd0dce 0, #540dce 100%);
+    filter: blur(6.875em);
+    position: absolute;
+    width: 48em;
+    height: 25.4375em;
+    top: 10.9375em;
+    left: 10.5em;
+  }
+
+  .section-front-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100em;
+    z-index: 0;
+    pointer-events: none;
+
+    @media #{$mob} {
+      display: none;
+      visibility: hidden;
+    }
+
+    .img-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .missionVisionRow {
+    z-index: 2;
+    position: relative;
+
+    @media #{$tabL} {
+      position: sticky;
+      top: 7.5em;
+    }
+  }
+
+  .rightCol {
+    @media #{$ipad} {
+      margin-top: 2em;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.notFound {
+  height: 100dvh;
+  background-image: url("/assets/images/404.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 4.8125em;
+  position: relative;
+
+  .section-front-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    @media #{$mob} {
+      display: none;
+    }
+    .img-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 32.25em;
+    text-align: center;
+
+    @media #{$ipad} {
+      max-width: 22.25em;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3.0625em;
+    line-height: 1.2;
+
+    @media #{$ipad} {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media #{$ipadpro} {
+    background-size: 200vw;
+    background-repeat: no-repeat;
+  }
+
+  @media #{$ipad} {
+    background-size: 240vw;
+    background-repeat: no-repeat;
+    padding-bottom: 8em;
+  }
+}

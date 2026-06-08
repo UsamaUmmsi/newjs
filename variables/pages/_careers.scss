@@ -1,0 +1,858 @@
+.whyWorkContentImgWrap {
+    margin-top: 4.5em;
+    align-items: flex-end;
+
+    @media #{$ipadpro} {
+        margin-top: 2em;
+    }
+
+    .whyWorkList {
+        @media #{$desktop} {
+            margin-right: 5.75em;
+        }
+    }
+
+    .whyWorkItem {
+        padding-bottom: 1.625em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 1.875em;
+
+        @media #{$ipad} {
+            padding-bottom: 1em;
+            margin-bottom: 1.125em;
+        }
+
+        h4 {
+            font-weight: 500;
+        }
+
+        &:last-child {
+            // border-bottom: none;
+            // padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .whyWorkImage {
+        border-radius: 1.375em;
+        overflow: hidden;
+
+        @media #{$desktop} {
+            margin-left: 2.625em;
+        }
+
+        @media #{$ipad} {
+            margin-top: 2em;
+            height: 40em;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.whyWorkWithUsSec {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 67.6875em;
+        height: 49.6875em;
+        top: -6.25em;
+        right: -9em;
+        border-radius: 957.152px;
+        opacity: 0.2;
+        background: var(--Gradian-1, linear-gradient(90deg, #DD0DCE 0%, #540DCE 100%));
+        filter: blur(110.00000762939453px);
+        z-index: 1;
+        pointer-events: none;
+        overflow: hidden;
+
+        @media #{$ipadpro} {
+            max-width: 67.6875em;
+            width: 100%;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+// Open Positions Section
+.openPositionsSec {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 60.6875em;
+        top: 0;
+        right: 0;
+        background: url('../svg/career/whyChooseBg.svg');
+        z-index: 1;
+        pointer-events: none;
+    }
+}
+
+// Location Filter Tabs
+.locationFilterTabs {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+
+    @media #{$mob} {
+        gap: 0.75em;
+    }
+}
+
+.locationFilterTab {
+    padding: 0.75em 1.5em;
+    border-radius: 0.625em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9375em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    @media #{$mob} {
+        padding: 0.625em 1.25em;
+        font-size: 0.875em;
+    }
+
+    &:hover {
+        border-color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.9);
+        background: rgba($primarycol, 0.05);
+    }
+
+    &.active {
+        border-color: $primarycol;
+        color: $primarycol;
+        background: rgba($primarycol, 0.1);
+    }
+}
+
+.noPositions {
+    padding: 3em 2em;
+    text-align: center;
+    border-radius: 1.375em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(41, 41, 41, 0.20);
+
+    p {
+        opacity: 0.7;
+        margin: 0;
+    }
+}
+
+.openPositionsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    margin-top: 3.25em;
+
+    @media #{$ipadpro} {
+        margin-top: 1.25em;
+    }
+
+    &__heading {
+        font-size: 1em;
+        opacity: 0.6;
+        margin: 0;
+    }
+}
+
+.openPositionItemAnchorWrap {
+    position: relative;
+}
+
+.openPositionItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9375em 1.5625em;
+    border-radius: 1.375em;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    background: rgba(41, 41, 41, 0.40);
+    backdrop-filter: blur(2px);
+    gap: 1.5em;
+
+    @media #{$mob} {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5em 1em;
+        gap: 1em;
+    }
+
+    &__content {
+        // flex: 1;
+    }
+
+    &__title {
+        margin-bottom: 0.5em;
+        font-weight: 500;
+
+    }
+
+    &__location {
+        color: #EDEDED;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    &__action {
+        flex-shrink: 0;
+
+        @media #{$mob} {
+            width: 100%;
+        }
+
+        .btn {
+            @media #{$mob} {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.loadMoreWrap {
+    margin-top: 4.625em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+
+    @media #{$ipadpro} {
+        margin-top: 3em;
+    }
+}
+
+// Career Detail Page Styles
+.careerDetailBanner {
+    .innerHeroImage {
+        height: 28.125em;
+
+        @media #{$ipad} {
+            height: 35em;
+        }
+
+        @media #{$mob} {
+            height: 30em;
+        }
+    }
+
+    .container-s {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.careerDetailHero {
+    margin-bottom: 4em;
+
+    @media #{$desktop} {
+        padding-right: 5.375em;
+    }
+
+    @media #{$ipadpro} {
+        margin-bottom: 2em;
+    }
+
+    &__head {
+        margin-bottom: 1.875em;
+
+        @media #{$mob} {
+            margin-bottom: 1.25em;
+        }
+    }
+
+    &__subTitle {
+        margin-bottom: 0.75em;
+        opacity: 0.8;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    &__title {
+        font-weight: 300;
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2em;
+
+        @media #{$mob} {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5em;
+        }
+    }
+
+    &__action {
+        @media #{$mob} {
+            width: 100%;
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.careerMeta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    // &__item {
+    //     padding: 0.5em 1.25em;
+    //     border-radius: 2em;
+    //     background: rgba(255, 255, 255, 0.1);
+    //     font-size: 0.875rem;
+    //     white-space: nowrap;
+
+    //     @media #{$mob} {
+    //         font-size: 0.8125rem;
+    //         padding: 0.4em 1em;
+    //     }
+    // }
+}
+
+.jobDescriptionSection {
+    padding-top: 13.125em;
+    position: relative;
+
+    @media #{$ipad} {
+        padding-top: 8em;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 68.25em;
+        top: 0;
+        right: 0;
+        background: url('../svg/career/careerDetailBg.svg');
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    // .custom-row {
+    //     gap: 3em;
+
+    //     @media #{$ipad} {
+    //         gap: 2em;
+    //     }
+    // }
+    .careerDetailFormWrapper {
+        background-color: $whitecol;
+        padding: 2.25em;
+        color: $blackcol;
+        border-radius: 1.375em;
+        // position: sticky;
+        // top: 7.5em;
+        z-index: 1;
+        position: relative;
+
+        @media #{$ipad} {
+            margin-top: 2em;
+        }
+
+        @media #{$mob} {
+            padding: 1.5em 1em;
+            margin-top: 1.5em;
+        }
+
+        h4,
+        p {
+            color: $blackcol;
+        }
+
+        .input-container,
+        .select-container {
+            margin-bottom: 1.75em;
+        }
+
+        .primary-btn {
+            margin-top: 0.625em;
+        }
+    }
+}
+
+.jobContent {
+    @media #{$desktop} {
+        padding-right: 5.375em;
+    }
+
+    &__title {
+        margin-bottom: 1.25em;
+        font-weight: 500;
+    }
+
+    &__desc {
+        margin-bottom: 3em;
+
+        @media #{$ipad} {
+            margin-bottom: 2em;
+        }
+
+        p {
+            margin-bottom: 1em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__additional {
+        margin-top: 3em;
+        padding-top: 3em;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+        @media #{$ipad} {
+            margin-top: 2em;
+            padding-top: 2em;
+        }
+    }
+
+    h4 {
+        font-size: 1.625em;
+
+        @media #{$ipadpro} {
+            font-size: 1.25em;
+        }
+    }
+
+    ul,
+    p {
+        font-size: 1.25em;
+
+        @media #{$ipadpro} {
+            font-size: 1em;
+        }
+
+        ul {
+            margin-top: 1em;
+            font-size: 1em;
+        }
+    }
+}
+
+.jobSection {
+    margin-bottom: 3em;
+
+    @media #{$ipad} {
+        margin-bottom: 2em;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__title {
+        margin-bottom: 1.25em;
+        font-weight: 500;
+    }
+}
+
+.jobList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        position: relative;
+        padding-left: 1.75em;
+        margin-bottom: 1em;
+        line-height: 1.6;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.5em;
+            width: 0.5em;
+            height: 0.5em;
+            border-radius: 50%;
+            background: var(--Gradian-1, linear-gradient(90deg, #DD0DCE 0%, #540DCE 100%));
+        }
+    }
+}
+
+.richText {
+
+    h4,
+    h5,
+    h6 {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-weight: 500;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 1em;
+        line-height: 1.7;
+    }
+
+    ul,
+    ol {
+        margin-bottom: 1.5em;
+        padding-left: 1.5em;
+
+        li {
+            margin-bottom: 0.75em;
+            line-height: 1.6;
+        }
+    }
+
+    a {
+        color: #DD0DCE;
+        text-decoration: underline;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.jobSidebar {
+    position: sticky;
+    top: 7.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    @media #{$ipad} {
+        position: relative;
+        top: 0;
+        margin-top: 3em;
+    }
+}
+
+.jobCard {
+    padding: 2em;
+    border-radius: 1.375em;
+    background: rgba(41, 41, 41, 0.4);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    @media #{$mob} {
+        padding: 1.5em;
+    }
+
+    &__title {
+        margin-bottom: 0.75em;
+        font-weight: 500;
+    }
+
+    &__desc {
+        margin-bottom: 1.5em;
+        opacity: 0.8;
+        font-size: 0.9375rem;
+    }
+}
+
+.applyCard {
+    background: linear-gradient(135deg, rgba(221, 13, 206, 0.15) 0%, rgba(84, 13, 206, 0.15) 100%);
+    border-color: rgba(221, 13, 206, 0.3);
+
+    .btn--block {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.jobInfoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0.875em 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        gap: 1em;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+
+    &__label {
+        font-size: 0.875rem;
+        opacity: 0.7;
+        flex-shrink: 0;
+    }
+
+    &__value {
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-align: right;
+    }
+}
+
+.shareLinks {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: rgba(221, 13, 206, 0.2);
+            transform: translateY(-2px);
+        }
+
+        i {
+            font-size: 1.125rem;
+        }
+    }
+}
+
+.otherPositionsSection {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+.cvUploadWrapper {
+    .upload-title {
+        color: rgba($blackcol, 0.70);
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.1;
+        letter-spacing: -0.64px;
+        margin-bottom: 1em;
+        display: block;
+    }
+
+    .cvDropArea {
+        border: 1px dashed rgba(40, 40, 43, 0.40);
+        background: rgba(255, 255, 255, 0.30);
+        border-radius: 1em;
+        padding: 2.125em;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        gap: 0.625em;
+        justify-content: center;
+        align-items: center;
+
+        @media #{$ipadpro} {
+            padding: 1.5em;
+            font-size: 1em;
+        }
+
+        @media #{$mob} {
+            padding: 0.75em;
+            font-size: 1em;
+        }
+
+        &:hover {
+            border-color: $primarycol;
+            background: rgba($primarycol, 0.05);
+        }
+
+        &.drag-active {
+            border-color: $primarycol;
+            background: rgba($primarycol, 0.1);
+        }
+
+        .upload-btn-wrapper {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5em;
+            padding: 0.75em 1.5em;
+            // background: $primarycol;
+            color: $blackcol;
+            border-radius: 2em;
+            font-weight: 400;
+            font-size: 1.125em;
+            transition: all 0.3s ease;
+            border: 1px solid $blackcol;
+
+            @media #{$ipadpro} {
+                padding: 0.75em;
+                font-size: 1em;
+            }
+
+            img {
+                width: 1em;
+                height: 1em;
+            }
+
+            &:hover {
+                // transform: translateY(-2px);
+                // box-shadow: 0 4px 12px rgba($primarycol, 0.3);
+            }
+        }
+
+        .upload-text {
+            margin: 0;
+            font-size: 1.125em;
+            color: rgba($blackcol, 0.7);
+
+            @media #{$mob} {
+                font-size: 1em;
+            }
+
+            .cvPlaceholder {
+                color: $blackcol;
+                font-weight: 500;
+
+                &.hasFile {
+                    color: $primarycol;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .upload-info {
+        display: block;
+        margin-top: 0.5em;
+        font-size: 0.75em;
+        color: rgba($blackcol, 0.5);
+    }
+
+    .cvFileInput {
+        display: none;
+    }
+}
+
+// Custom Checkbox Styles
+.checkbox-wrapper {
+    margin-bottom: 1.75em !important;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    gap: 0.75em;
+
+    input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked~.checkmark {
+            background: $primarycol;
+            border-color: $primarycol;
+
+            &::after {
+                display: block;
+            }
+        }
+
+        &:focus~.checkmark {
+            box-shadow: 0 0 0 3px rgba($primarycol, 0.2);
+        }
+    }
+
+    .checkmark {
+        position: relative;
+        height: 1.375em;
+        width: 1.375em;
+        min-width: 1.375em;
+        background-color: transparent;
+        border: 2px solid $blackcol;
+        border-radius: 0.25em;
+        transition: all 0.3s ease;
+
+        @media #{$mob} {
+            height: 1.25em;
+            width: 1.25em;
+            min-width: 1.25em;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            width: 0.375em;
+            height: 0.625em;
+            border: solid $whitecol;
+            border-width: 0 2px 2px 0;
+
+            @media #{$mob} {
+                width: 0.3125em;
+                height: 0.5625em;
+            }
+        }
+    }
+
+    .checkbox-label {
+        font-size: 1.125em;
+        color: $blackcol;
+        line-height: 1.4;
+
+        @media #{$ipadpro} {
+            font-size: 1em;
+        }
+
+        @media #{$mob} {
+            font-size: 0.9375em;
+        }
+    }
+
+    &:hover {
+        .checkmark {
+            border-color: $primarycol;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.termsAndConditionsSection {
+  margin-top: 10em;
+
+  @media #{$ipad} {
+    margin-top: 8em;
+  }
+
+  &__row {
+    @media #{$desktop} {
+      column-gap: 12.9375em;
+    }
+  }
+
+  .genericHead {
+    @media #{$ipadL} {
+      position: sticky;
+      top: 8em;
+      left: 0;
+
+      &__title {
+        line-height: 1.1;
+      }
+    }
+  }
+
+  .clauses {
+    .clause {
+      &__title {
+        margin-bottom: 0.45em;
+
+        @media #{$desktop} {
+          font-size: 2.1875em;
+          font-weight: 700;
+          line-height: 1.2;
+        }
+      }
+
+      &__text,
+      li {
+        @media #{$desktop} {
+          font-size: 1.25em;
+          font-weight: 300;
+          line-height: 1.35;
+        }
+      }
+
+      ul {
+        padding-left: 1.5em;
+        list-style: none;
+
+        li {
+          margin-bottom: 1.5em;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0.72em;
+            height: 0.72em;
+            top: 0.4375em;
+            left: -1.4375em;
+            background: linear-gradient(90deg, #cd0dce 0%, #5f0dce 100%);
+            border-radius: 50%;
+            box-shadow: 0 4px 15px 0 rgba(205, 13, 206, 0.5),
+              0 6px 20px 0 rgba(95, 13, 206, 0.4);
+          }
+        }
+      }
+    }
+  }
+}

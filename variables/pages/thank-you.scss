@@ -1,0 +1,135 @@
+.thankyou-section {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .section-front-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    @media #{$mob} {
+      display: none;
+    }
+    .img-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .arcSection {
+    pointer-events: none;
+    position: fixed;
+    bottom: -11em;
+    left: 0;
+    width: 100%;
+    transform: scale(1.25);
+
+    @media #{$ipadL} {
+      margin-top: 0;
+    }
+
+    @media #{$desktop} {
+      margin-top: 0;
+    }
+
+    @media #{$ipad} {
+      bottom: -4em;
+    }
+
+    .img-wrapper {
+      width: 100%;
+      height: 32.5em;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      @media #{$ipadpro} {
+        height: 24em;
+      }
+
+      @media #{$ipad} {
+        height: 19em;
+      }
+
+      @media #{$mobL} {
+        height: 14.5em;
+      }
+    }
+
+    &__overlay {
+      position: absolute;
+      bottom: -19.3125em;
+      left: 0;
+      width: 100%;
+      height: 26.5em;
+      background: linear-gradient(to bottom, #000 40%, rgba(0, 0, 0, 0) 74%);
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 55.1875em;
+    text-align: center;
+
+    @media #{$ipadpro} {
+      max-width: 50vw;
+    }
+
+    @media #{$ipad} {
+      max-width: 60vw;
+    }
+
+    @media #{$mobL} {
+      max-width: 22.25em;
+    }
+  }
+
+  &__title {
+    text-transform: capitalize;
+
+    @media #{$desktop} {
+      font-size: 6.25em;
+    }
+
+    @media #{$mobL} {
+      font-size: 2.5em;
+    }
+  }
+
+  &__description {
+    margin-bottom: 3.0625em;
+    line-height: 1.2;
+    max-width: 36em;
+    margin: 0 auto 3.0625em auto;
+
+    @media #{$desktop} {
+      font-size: 1.375em;
+    }
+
+    @media #{$ipadpro} {
+      margin-bottom: 2em;
+    }
+
+    @media #{$mobL} {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}
