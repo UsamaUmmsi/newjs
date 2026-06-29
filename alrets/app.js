@@ -29,22 +29,26 @@
 // console.log(ccsResult);
 
 
-alert("alerts alrets")
+// alert("alerts alrets")
 
-var school = "smit"
-var batch = 18
-var domian  = "Digital Gravity"
+// var school = "smit"
+// var batch = 18
+// var domian  = "Digital Gravity"
 
-var nationalty;
-nationalty = "pakistani"; 
+// var nationalty;
+// nationalty = "pakistani"; 
 
-console.log(" Usama is " + nationalty + " Nationalty");
+// console.log(" Usama is " + nationalty + " Nationalty");
 
-var nationaly ;
-nationalty = "USAMA KHAN"
+// var nationaly ;
+// nationalty = "USAMA KHAN"
 
 
-console.log(nationalty);
+// console.log(nationalty);
+
+
+
+
 
 
 
