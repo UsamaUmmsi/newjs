@@ -47,6 +47,25 @@
 // console.log(nationalty);
 
 
+// var age = "23"
+// var newage = age+"23"
+
+// console.log(newage);
+
+// console.log(typeof(newage))
+
+
+// variable topic
+
+var productName = "Biryani Masala"
+var productPrice = 150,
+productPrice = 150 -15
+
+console.log(productPrice);
+
+
+
+
 
 
 
