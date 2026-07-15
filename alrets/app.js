@@ -57,17 +57,64 @@
 
 // variable topic
 
-var productName = "Biryani Masala"
-var productPrice = 150,
-productPrice = 150 -15
+// var productName = "Biryani Masala"
+// var productPrice = 150,
+// productPrice = 150 -15
 
-console.log(productPrice);
-
-
+// console.log(productPrice);
 
 
 
+// yeh galat hai is abhi to outputajayega lekin agar salary or barhti hia to out yehhi rahe ga 
 
+var salary = 300000
+var increcment = 30000
+var totalsalarytIncrecemantAfter = 300000 + 30000
+
+console.log(totalsalarytIncrecemantAfter);
+
+
+// correct is ke ap varibale use karain 
+
+var salary = 300000
+var increcment = 30000 + 1000 
+var totalsalarytIncrecemantAfter = salary + increcment
+
+console.log(totalsalarytIncrecemantAfter);
+
+
+var phoneNumber = "03052037977"
+
+phoneNumber +  "03315335409"
+
+
+var firstName = "Usama"
+var lastName = "Khan"
+
+console.log(firstName + lastName);
+
+// yeh Nan hai kyon ke is main koi number nahi hai - bass number per hota hai 
+
+console.log(firstName - lastName);
+
+
+
+var num1 = "250000"
+var num2 = 5000
+
+// yeh kese hosakt ahai 
+    
+    // yeh abhi text ot number ko same likh de ga concotenate kar dega matlab '2500005000' aisa output ajayeg a 
+console.log(num1 + num2);
+
+// lekin yahn yeh khelata hai ( TYPE COERCION  ) matlb yeh iski type ko convert karni ki koshish karta hia
+ 
+console.log(num1 - num2);
+
+
+
+
+ 
 
 
 
