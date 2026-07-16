@@ -112,6 +112,21 @@ console.log(num1 + num2);
 console.log(num1 - num2);
 
 
+var num1 = "25000"
+var num2 = 5000
+//  type check karta hai agar to tarf number hain to 
+// string main agar number hain to to koshish karega ke yeh uski type change karde  
+var addOn = num1 - num2
+
+console.log(addOn);
+
+
+
+
+
+
+
+
 
 
  
