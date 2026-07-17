@@ -67,58 +67,100 @@
 
 // yeh galat hai is abhi to outputajayega lekin agar salary or barhti hia to out yehhi rahe ga 
 
-var salary = 300000
-var increcment = 30000
-var totalsalarytIncrecemantAfter = 300000 + 30000
+// var salary = 300000
+// var increcment = 30000
+// var totalsalarytIncrecemantAfter = 300000 + 30000
 
-console.log(totalsalarytIncrecemantAfter);
-
-
-// correct is ke ap varibale use karain 
-
-var salary = 300000
-var increcment = 30000 + 1000 
-var totalsalarytIncrecemantAfter = salary + increcment
-
-console.log(totalsalarytIncrecemantAfter);
+// console.log(totalsalarytIncrecemantAfter);
 
 
-var phoneNumber = "03052037977"
+// // correct is ke ap varibale use karain 
 
-phoneNumber +  "03315335409"
+// var salary = 300000
+// var increcment = 30000 + 1000 
+// var totalsalarytIncrecemantAfter = salary + increcment
 
-
-var firstName = "Usama"
-var lastName = "Khan"
-
-console.log(firstName + lastName);
-
-// yeh Nan hai kyon ke is main koi number nahi hai - bass number per hota hai 
-
-console.log(firstName - lastName);
+// console.log(totalsalarytIncrecemantAfter);
 
 
+// var phoneNumber = "03052037977"
 
-var num1 = "250000"
-var num2 = 5000
+// phoneNumber +  "03315335409"
 
-// yeh kese hosakt ahai 
+
+// var firstName = "Usama"
+// var lastName = "Khan"
+
+// console.log(firstName + lastName);
+
+// // yeh Nan hai kyon ke is main koi number nahi hai - bass number per hota hai 
+
+// console.log(firstName - lastName);
+
+
+
+// var num1 = "250000"
+// var num2 = 5000
+
+// // yeh kese hosakt ahai 
     
-    // yeh abhi text ot number ko same likh de ga concotenate kar dega matlab '2500005000' aisa output ajayeg a 
-console.log(num1 + num2);
+//     // yeh abhi text ot number ko same likh de ga concotenate kar dega matlab '2500005000' aisa output ajayeg a 
+// console.log(num1 + num2);
 
-// lekin yahn yeh khelata hai ( TYPE COERCION  ) matlb yeh iski type ko convert karni ki koshish karta hia
+// // lekin yahn yeh khelata hai ( TYPE COERCION  ) matlb yeh iski type ko convert karni ki koshish karta hia
  
-console.log(num1 - num2);
+// console.log(num1 - num2);
 
 
-var num1 = "25000"
-var num2 = 5000
-//  type check karta hai agar to tarf number hain to 
-// string main agar number hain to to koshish karega ke yeh uski type change karde  
-var addOn = num1 - num2
+// var num1 = "25000"
+// var num2 = 5000
+// //  type check karta hai agar to tarf number hain to 
+// // string main agar number hain to to koshish karega ke yeh uski type change karde  
+// var addOn = num1 - num2
 
-console.log(addOn);
+// console.log(addOn);
+
+
+
+// Math Expression :
+// unfamiliar operator
+
+
+// Increment or decremant Oppretor
+
+// increment  = barhna  plus   ==>     ++  karna  +1 karega  
+// decrement = ghatana  minus   ==>    --  karna  -1 karega
+
+
+var number = 5
+number++  //6
+number++  //7
+number ++ //8
+number -- //7
+console.log(number);
+
+
+//  ==> pre ==> Phelay
+//  ===> post ===> baad mian
+
+// preincrement ==> ++num1
+//postincrement ==> num1++
+
+// predecrement ==> --num1
+// postdecrement ==> num1--
+
+
+
+var num1 = 25 
+
+num1++
+++num1 //preincrement
+num1++ //postincrement
+--num1 //predecrement
+num1-- //postdecrement
+console.log(num1);
+
+
 
 
 
