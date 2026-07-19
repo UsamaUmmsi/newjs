@@ -132,12 +132,12 @@
 // decrement = ghatana  minus   ==>    --  karna  -1 karega
 
 
-var number = 5
-number++  //6
-number++  //7
-number ++ //8
-number -- //7
-console.log(number);
+// var number = 5
+// number++  //6
+// number++  //7
+// number ++ //8
+// number -- //7
+// console.log(number);
 
 
 //  ==> pre ==> Phelay
@@ -151,30 +151,42 @@ console.log(number);
 
 
 
-var num1 = 25 
+// var num1 = 25 
 
-num1++
-++num1 //preincrement
-num1++ //postincrement
---num1 //predecrement
-num1-- //postdecrement
-console.log(num1);
-
-
+// num1++
+// ++num1 //preincrement
+// num1++ //postincrement
+// --num1 //predecrement
+// num1-- //postdecrement
+// console.log(num1);
 
 
+var num = 3
 
+++num + --num + num++ +num++ - ++num - num-- - num-- + ++num + num++
 
+console.log(num) // 6
 
-
-
-
+// 4 + 3 = 7
+// 7 + 3 = 10
+// 10 + 4 = 14
+// 14 - 6 = 8
+// 8 - 6 = 2
+// 2 - 5 = -3
+// 2 + 5 = 7
 
 
  
 
 
-
+// 4 + 3 = 7
+// 7 + 3 = 10
+// 10 + 4 = 14
+// 14 - 6 = 8
+// 8 - 6 = 2
+// 2 - 5 = -3
+// -3 + 5 = 2
+// 2 + 5 = 7
 
 
 
