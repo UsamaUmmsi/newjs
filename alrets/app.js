@@ -53,7 +53,9 @@
 // console.log(newage);
 
 // console.log(typeof(newage))
+ 
 
+// Call 04
 
 // variable topic
 
@@ -122,8 +124,12 @@
 
 
 
-// Math Expression :
-// unfamiliar operator
+
+
+
+
+// { Math Expression :
+// unfamiliar operator } 
 
 
 // Increment or decremant Oppretor
@@ -161,11 +167,11 @@
 // console.log(num1);
 
 
-var num = 3
+// var num = 3
 
-++num + --num + num++ +num++ - ++num - num-- - num-- + ++num + num++
+// ++num + --num + num++ +num++ - ++num - num-- - num-- + ++num + num++
 
-console.log(num) // 6
+// console.log(num) // 6
 
 // 4 + 3 = 7
 // 7 + 3 = 10
@@ -189,4 +195,51 @@ console.log(num) // 6
 // 2 + 5 = 7
 
 
+
+// Math Expression
+// Familiar Operators
+
+// alert(2 + 2)
+
+
+// alert("Usama" + "Khan")
+
+
+// alert(25 - 5)
+
+
+// var num1 = 25 
+// var num2 = 5
+
+// var num3 = num1 / num2
+// //  console.log(num3)
+// alert(num3)
+//  document.write(num3)
+
+
+// MODULUS  %  ==>  remainder jo bahi kochi value hia usko return kar dega is called reminder
+
+// var cake = 10
+
+// var person =  5
+
+
+// var remainingCake = cake % person
+
+// alert(remainingCake)
+
+// 10 / 3 ==>> 5 ----> cake ki remainig 1 -->> remnder -->> 1
+
+
+// Java Script Main yeh 3 tarah se likha ja sakta hia ek document.write()  se  dusra console.log() se aur tisra alert()se 
+
+
+// Helper Function 
+
+document.write("Hello World");
+// it will help you to write on the web page
+console.log("Hello World");
+// it i
+alert("Hello World");
+// it will help you to write pop up alert on the web page
 
