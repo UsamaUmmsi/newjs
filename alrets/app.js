@@ -234,12 +234,89 @@
 // Java Script Main yeh 3 tarah se likha ja sakta hia ek document.write()  se  dusra console.log() se aur tisra alert()se 
 
 
-// Helper Function 
+// // Helper Function 
 
-document.write("Hello World");
-// it will help you to write on the web page
-console.log("Hello World");
-// it i
-alert("Hello World");
+// document.write("Hello World");
+// // it will help you to write on the web page
+// console.log("Hello World");
+// // it i
+// alert("Hello World");
 // it will help you to write pop up alert on the web page
 
+
+
+// Variable - Most basic building Blocks 
+// Variables - Store , Access , Modify == Value 
+// Declare , Assignment Opretor , Initialization , Reassignment , access , Modify , Delete,
+
+
+// varibale can store data in a container and we can use it when we needed
+
+
+
+// VAR LET AND CONST EXPLAINED 
+
+
+// HOW TO CREAT A VARIBALE 3 TYPES OF KEYWORD 
+
+// es5 --->   older version  ------->> var 
+// es6 --->   modern version ------->> let and const  
+
+
+// using const (CONSTANT) - cant-re-assign 
+// var value = "Usama";
+// console.log(value);
+// // using const (CONSTANT) - cant-re-assign 
+// let name = "Khan";
+// console.log(name);
+// // using const (CONSTANT) - cant-re-assign 
+// const lastName = "Usama Khan";
+// console.log(lastName);
+
+
+
+// var bag ---------------------->> Declaration
+// bag = "laptop and headphone " ------------------> assigning or initialization 
+
+// var bag = "laptop and headphone"  =======> Declaration + Initiliazation 
+
+
+// var ek hi varibale ko bar bar assigning and delaration kar sakt ahai 
+
+
+// var favourateLangue  = "javaScript"
+// var favourateLangue  = "phthon"
+// favourateLangue = "react native"
+
+
+// let re-decalaration nahi karne donga 
+
+
+
+// let fruit = "apple";
+
+// fruit  = "Mango";
+
+
+// Uncaught TypeError: Assignment to constant variable.
+
+
+// const  re-declaration and re-assigning is not allowed 
+
+const fruit = "pine-Apple";
+
+console.log(fruit);
+
+
+
+
+
+
+
+
+
+
+//  var    ,     name     ,          =           ,   "Usama Khan"
+//  let    ,              ,          =           ,
+//  const  ,              ,          =           ,
+// keyword ,    Variable  ,    AssigningOpretor  ,    value     
