@@ -311,6 +311,28 @@ console.log(fruit);
 
 
 
+var apple = "red applr"
+var apple = "green apple"
+
+
+let c_apple = "red apple"
+c_apple = "green apple"
+
+
+const d_apple = "red apple"
+
+console.log(c_apple);
+
+
+var cake = 10
+
+var person =  3
+
+
+var remainingCake = cake % person
+
+alert(remainingCake)
+
 
 
 
@@ -319,4 +341,12 @@ console.log(fruit);
 //  var    ,     name     ,          =           ,   "Usama Khan"
 //  let    ,              ,          =           ,
 //  const  ,              ,          =           ,
-// keyword ,    Variable  ,    AssigningOpretor  ,    value     
+// keyword ,    Variable  ,    AssigningOpretor  ,    value    
+
+
+
+
+
+
+
+
