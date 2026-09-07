@@ -373,5 +373,8 @@ console.log(name);
 console.log(" my name is " + firstName + " " + lastName + " my address is " + address + " i have to learn for Js " + name + "");
 
 
+// string concatenation is the process of combining two or more strings together to form a single string. In JavaScript, you can concatenate strings using the + operator. For example, if you have two strings, "Hello" and "World", you can concatenate them like this:
+
+
 
 
