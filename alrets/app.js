@@ -331,9 +331,7 @@ var person =  3
 
 var remainingCake = cake % person
 
-alert(remainingCake)
-
-
+alert(remainingCake) 
 
 
 
@@ -342,6 +340,22 @@ alert(remainingCake)
 //  let    ,              ,          =           ,
 //  const  ,              ,          =           ,
 // keyword ,    Variable  ,    AssigningOpretor  ,    value    
+
+
+let firstName = "usama"
+let lastName = "khan"
+
+console.log(firstName + lastName);
+
+let address = "food Street"
+address = "First Street"
+
+console.log(address);
+
+
+
+// new topic String Concatenation
+
 
 
 
