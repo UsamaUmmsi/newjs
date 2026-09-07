@@ -348,7 +348,7 @@ let lastName = "khan"
 console.log(firstName + lastName);
 
 let address = "food Street"
-address = "First Street"
+address = "North Nazimabd Karachi"
 
 console.log(address);
 
@@ -370,7 +370,7 @@ console.log(name);
 // Sting Concatenation
 
 
-console.log(" my name is " + firstName + " my address is " + address + " i have to learn " + name + "");
+console.log(" my name is " + firstName + " " + lastName + " my address is " + address + " i have to learn for Js " + name + "");
 
 
 
