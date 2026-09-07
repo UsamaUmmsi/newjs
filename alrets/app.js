@@ -342,7 +342,7 @@ alert(remainingCake)
 // keyword ,    Variable  ,    AssigningOpretor  ,    value    
 
 
-let firstName = "usama"
+let firstName = "Usama"
 let lastName = "khan"
 
 console.log(firstName + lastName);
@@ -354,12 +354,23 @@ console.log(address);
 
 
 
-// new topic String Concatenation
+// How to creat a normal string 
+
+// "" Double Quotation
+// '' Single Quotation
+// `` backtick  (``)  Template Literal
 
 
 
+const name = "jhon's courses are the best";
+
+console.log(name);
 
 
+// Sting Concatenation
+
+
+console.log(" my name is " + firstName + " my address is " + address + " i have to learn " + name + "");
 
 
 
