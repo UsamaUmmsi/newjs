@@ -367,14 +367,45 @@ const name = "jhon's courses are the best";
 console.log(name);
 
 
-// Sting Concatenation
-
+// Sting Concatenation 2 string ko jorna ya add karna string concatenation kehlata hia ek varibable or string ko jorna ya add karna string concatenation kehlata hia
+// Es5
 
 console.log(" my name is " + firstName + " " + lastName + " my address is " + address + " i have to learn for Js " + name + ""); 
 
 
+// Es6 ka new version hia jo ke backtick ke sath use hota hia aur is main ${} ka use hota hia
 
 
+console.log(`My Name is ${firstName} ${lastName} and my address is ${address} and i have to learn for Js ${name}`);
+
+
+// concatenation 
+
+
+const website = "digitalgravity"
+const url = "https://" + website + ".ae"
+
+console.log(url);
+
+
+// backtrick  (``)  Template Literal Modren Version of JS  `${}`  Es6 ka new version hia jo ke backtick ke sath use hota hia aur is main ${} ka use hota hia
+
+const website1 = "digitalgravity"
+const url1 = `https://${website1}.ae`
+console.log(url1);
+
+
+
+// Task Complete the code in the middle given the prefix code snippet and suffix code snippet.
+
+
+
+const steet = "North Nazimabad Karachi BLK H"
+const country = "Karachi , Pakistan"
+
+const fullMailingAddress = `My Address is ${steet} ${country}`
+
+console.log(fullMailingAddress);
 
 
 
